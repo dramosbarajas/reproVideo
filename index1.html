@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Reproductor de Video</title>
+</head>
+
+<body>
+    <div id="container">
+        <video width="600px" height="400px">
+        <source src="video/playa.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+    </video>
+        <div id="caja-contenedor">
+            <div id="contenido">
+                <div id="caja-control">
+                    <div id="audio">
+                        <img src="images/lv.svg" id="volmin"></img>
+                        <input type="range" id="rango_vol" max="1" min="0" step="0.01" value="1">
+                        <img src="images/hv.svg" id="volmas"></img>
+                    </div>
+                    <div id="control">
+                        <img src="images/rw.svg" id="atras"></img>
+                        <img src="images/play.svg" id="play"></img>
+                        <img src="images/ff.svg" id="adelante"></img>
+                    </div>
+                    <div id="agrandar">
+                        <img src="images/fs.svg" id="enterfull"></img>
+                    </div>
+                </div>
+                <div id="caja-tiempo">
+                    <span id="tiempo_inicial">0:00:00</span>
+                    <input type="range" id="rango_tiempo" value="0" min="0" max=""/>
+                    <span id="tiempo_total"></span>
+                </div>
+            </div>
+            <p>El video se esta mostrando en el segundo <span id="current_time"></span></p>
+            <span id=volstatus></span>
+        </div>
+    </div>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

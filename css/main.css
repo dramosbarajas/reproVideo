@@ -1,0 +1,120 @@
+
+#caja-contenedor
+{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.79);
+    width:600px;
+
+}
+
+#caja-control
+{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    align-self: center;
+    height: 40px;
+}
+#caja-tiempo div {flex: 1 1 auto;}
+
+
+#caja-tiempo{
+    width:100%;
+    margin-top:10px;
+    background-color:white;
+}
+
+img{
+  margin-left: 20px;
+}
+
+
+
+#caja-control img,input{cursor:pointer}
+#caja-tiempo{display:flex;
+height: 40px;}
+#caja-tiempo span {flex: 1 1 20%;
+    text-align:center;
+    align-items: flex-end;
+    align-self: center;}
+#caja-tiempo input {flex: 2 2 60%;
+  align-items: flex-end;
+  align-self: center;}
+img:hover{
+    transform: scale(1.3);
+}
+
+div#container{
+    width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+input[type=range]
+{
+  margin: 0 0 0 20px;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+  background-color: white;
+  height:  5px;
+  border-radius: 10px;
+}
+
+#caja-tiempo input[type=range]::-webkit-slider-runnable-track{
+  background-color: black;
+  height:  10px;
+  border-radius: 10px;
+}
+
+#caja-tiempo input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border:1px solid black;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background:steelblue;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top:-4px;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border:1px solid black;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background:steelblue;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: steelblue;
+}
+
+span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+span#volstatus{
+      color:white;
+      font-size: 14px;
+  }
+
+span#current_time{
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}
+
