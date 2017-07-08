@@ -1,3 +1,6 @@
+//INICIO SOFTWARE
+
+
 (function () {
 
     document.addEventListener('DOMContentLoaded',iniciar,false);
